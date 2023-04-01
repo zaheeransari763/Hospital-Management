@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Billing Gateway</title>
+	<link rel="stylesheet" type="text/css" href="Billing.css">
+</head>
+<body>
+	<div class="square">
+		<form action="">
+			<div class="line">
+				<div class="column">
+					<h3 class="this">billing address</h3>
+
+					<div class="inputBox">
+						<span>Full Name :</span>
+						<input type="text" placeholder="Enter Your Name" id="billname">
+					</div>
+
+					<div class="inputBox">
+						<span>email :</span>
+						<input type="email" placeholder="example@gmail.come" id="billemail">
+					</div>
+
+					<div class="inputBox">
+						<span>address :</span>
+						<input type="text" placeholder="streer - locality" id="billaddress">
+					</div>
+
+					<div class="inputBox">
+						<span>city :</span>
+						<input type="text" placeholder="Mumbai" id="billcity">
+					</div>
+
+					<div class="flex">
+						<div class="inputBox">
+							<span>state :</span>
+							<input type="text" placeholder="India" id="billstate">
+						</div>
+					</div>
+
+					<div class="inputBox">
+						<span>zip code:</span>
+						<input type="text" placeholder="123 456" id="billzipcode">
+					</div>
+
+
+				</div>
+
+				<div class="column">
+					<h3 class="this">payment</h3>
+
+					<div class="inputBox">
+						<span>card accepted :</span>
+						<img src="img/card.png">
+					</div>
+
+
+					<div class="inputBox">
+						<span>Name on card :</span>
+						<input type="text" placeholder="Enter Your Name" id="billcardname">
+					</div>
+
+					
+					<div class="inputBox">
+						<span>credit card number :</span>
+						<input type="nymber" placeholder="1111-2222-3333" id="billcreditcardnumber">
+					</div>
+
+					<div class="inputBox">
+						<span>exp month :</span>
+						<input type="text" placeholder="january" id="billexpmonth">
+					</div>
+
+					<div class="flex">
+						<div class="inputBox">
+							<span>exp year:</span>
+							<input type="text" placeholder="2022" id="billexpyear">
+						</div>
+					</div>
+
+					<div class="inputBox">
+						<span>cvv:</span>
+						<input type="text" placeholder="1234" id="billcvv">
+					</div>
+
+
+				</div>
+			</div>
+
+			<input type="submit" value="proceed to checkout" class="submit" id="billcheckoutbutton">
+
+		</form>
+	</div>
+	
+
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    
+    <!-- Our script must be loaded after firebase references -->
+
+<script src="billing.js" ></script>
+</html>

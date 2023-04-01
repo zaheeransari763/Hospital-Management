@@ -1,0 +1,123 @@
+*,
+*::after
+*::before{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html{
+	font-size: 20px;
+}
+ 
+body{
+	box-sizing: border-box;
+}
+
+section{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sec-bb{
+	height: 100vh;
+	background: #98AFC7;
+}
+
+.bb{
+	width: 60%;
+	height: 60%;
+	background-image: linear-gradient(105deg,rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(images/bbg1.jpg);
+	background-position: right;
+	border-radius: 3px;
+}
+
+.bb-form{
+	width: 50%;
+	padding: 2rem;
+}
+.heading{
+	font-size: 40px;
+	margin-bottom: 2rem;
+	color: #2e568f;
+}
+.form-grp{
+	margin-bottom: 2px;
+}
+
+.form-grp:nth-child(3){
+	margin-bottom: 2px;
+}
+
+.form-input{
+	font-size: 14px;
+	font-family: sans-serif;
+	color: inherit;
+	padding: 4px 8px;
+	border-radius: 2px;
+	background-color: rgba(196, 223, 230, 0.4);
+	border: none;
+	border-bottom: 3px solid transparent;
+	width: 30%;
+	transition: all 0.3s;
+}
+.form-input:focus{
+	outline: none;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	border-bottom: 3px solid #98afc7;
+	background-color: rgb(196, 223, 230);
+}
+.form-label{
+	font-size: 20px;
+	font-weight: 300;
+	margin-left: 4px;
+	margin-top: 2px;
+	transition: all 0.3s;
+}
+
+.form-input:placeholder-shown + .form-label{
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(-4px);
+}
+.form-radio-group{
+	width: 5%;
+	display: inline-block;
+	font-size: 18px;
+}
+.form-radio-grp{
+	height: 3px;
+	width: 3px;
+	border: 5px solid #98afc7;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.bton, .bton:link, .bton:visited{
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 4px 4px;
+	display: inline-block;
+	border-radius: 10px;
+	transition: all 0.2s;
+	position: relative;
+	font-size: 16px;
+	border: 2px solid #2e568f;
+	cursor: pointer;
+	margin-top: 4px;
+	background-color: rgb(196, 223, 230);
+	color: #2e568f;
+}
+
+.bton:hover{
+	transform: translateY(-3px);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.bton:active, .bton:focus{
+	outline: none;
+	transform: translateY(-3px);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}

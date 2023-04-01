@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration form</title>
+	<link rel="stylesheet" type="text/css" href="registration.css">
+</head>
+<body>
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Login</button>
+				<button type="button" class="toggle-btn" onclick="register()">Register</button>
+			</div>
+			<div class="social-icons">
+			<img src="img/fb.png">
+			<img src="img/wp.png">
+			<img src="img/gg.png">
+			
+		</div>
+		<form id="login" class="input-group" method="post" name="form" onsubmit="return validated()">
+			<input type="text" class="input-field" placeholder="Email" name="User Id" id="logemail" required>
+		
+			<input type="Password" class="input-field" placeholder="Enter Password" name="Password" id="logpassword" required>
+		
+			<input type="checkbox" class="check-box"><span>Remember Password</span>
+			<button type="submit" class="submit-btn" id="loginbutton">Login</button>
+		</form>
+
+		<form id="register" class="input-group">
+			<input type="text" class="input-field" placeholder="User Name" id="regname" required>
+			
+			<input type="email" class="input-field" placeholder="Email Id" id="regemail" required>
+	
+			<input type="password" class="input-field" placeholder="Enter Password" id="regpassword" required>
+			
+			<input type="number" class="input-field" placeholder="Enter Age" id="regage" required>
+			
+			<input type="number" class="input-field" placeholder="Enter Phone No" id="regphonenumber" required>
+			
+			<input type="text" class="input-field" placeholder="Enter Address" id="regaddress" required>
+			
+			<input type="date" class="input-field" placeholder="Date of Registration" id="registrationdate" required>
+			<input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+			<button type="submit" class="submit-btn" id="regbutton">Register</button>
+		</form>
+			
+		</div>
+		
+		
+	</div>
+
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn");
+
+		function register() {
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+
+		function login() {
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0px";
+		}
+
+
+	</script>
+
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    
+    <!-- Our script must be loaded after firebase references -->
+
+<script src="registeration.js" ></script>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Appoinment Page</title>
+	<link rel="stylesheet" type="text/css" href="appo.css">
+
+</head>
+<body>
+	<section class="sec-bb">
+		<div class="bb">
+			<div class="bb-form">
+				<form action="#" class="frm">
+					<h2 class="heading">
+						Appoinment
+					</h2>
+					<div class="form-grp">
+						<input type="text" class="form-input" placeholder="Patient Name" id="appname" required>
+						<label for="name" class="form-label">Patient Name</label>
+					</div>
+
+					<div class="form-grp">
+						<input type="email" class="form-input" placeholder="Pateint Email" id="appemail" required>
+						<label for="name" class="form-label">Pateint Email</label>
+					</div>
+
+					<div class="form-grp">
+						<input type="text" class="form-input" placeholder="Contact No" id="appnumber" required>
+						<label for="name" class="form-label">Pateint Contact No</label>
+					</div>
+
+					<div class="form-grp">
+						<input type="text" class="form-input" placeholder="Blood Group" id="appbloodgroup" required>
+						<label for="name" class="form-label">Blood Group</label>
+					</div>
+					
+					
+					<div class="form-grp">
+						<input type="text" class="form-input" placeholder="Date of Birth" id="appdob" required>
+						<label for="name" class="form-label">Date of Birth</label>
+					</div>
+
+
+					<div class="form-grp">
+						<input type="text" class="form-input" placeholder="Date of Appoinment" id="appdop" required>
+						<label for="name" class="form-label">Date of Appointment</label>
+					</div>
+
+
+					<div class="form-grp">
+						<input type="text" class="form-input" placeholder="Consulting Dr." id="appdoctor" required>
+						<label for="name" class="form-label">Consulting Dr.</label>
+					</div>
+
+
+
+					<div class="form-grp">
+						<button class="bton" id="appbutton">Submit</button>
+						
+					</div>
+
+				</form>
+			</div>
+			
+		</div>
+		
+	</section>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    
+    <!-- Our script must be loaded after firebase references -->
+
+<script src="appo.js" ></script>
+</html>
